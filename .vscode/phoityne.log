@@ -1,9 +1,0 @@
-2017-12-04 03:52:58 [ThreadId 7] ERROR phoityne - [deleteBreakPointOnGHCi] invalid delete break point. BreakPointData {nameBreakPointData = "Main", srcPosBreakPointData = SourcePosition {filePathSourcePosition = "/Users/tehnix/Dropbox/__Synced/Testing/Haskell/Test/app/Main.hs", startLineNoSourcePosition = 9, startColNoSourcePosition = -1, endLineNoSourcePosition = -1, endColNoSourcePosition = -1}, breakNoBreakPointData = Nothing, conditionBreakPointData = Nothing, hitConditionBreakPointData = Nothing, hitCountBreakPointData = 0}
-2017-12-04 03:58:40 [ThreadId 7] ERROR phoityne - H>>= :trace
- can not use these commands.
-[":{",":abandon",":back",":break",":continue",":delete",":force",":forward",":history",":list",":print",":sprint",":step",":steplocal",":stepmodule",":trace"]
-
-2017-12-04 03:58:43 [ThreadId 7] ERROR phoityne - H>>= :trace y
- can not use these commands.
-[":{",":abandon",":back",":break",":continue",":delete",":force",":forward",":history",":list",":print",":sprint",":step",":steplocal",":stepmodule",":trace"]
-
