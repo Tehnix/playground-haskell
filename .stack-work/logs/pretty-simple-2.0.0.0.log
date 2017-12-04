@@ -1,0 +1,14 @@
+Configuring pretty-simple-2.0.0.0...
+Building pretty-simple-2.0.0.0...
+Preprocessing library pretty-simple-2.0.0.0...
+[1 of 8] Compiling Text.Pretty.Simple.Internal.Output ( src/Text/Pretty/Simple/Internal/Output.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Text/Pretty/Simple/Internal/Output.o )
+[2 of 8] Compiling Text.Pretty.Simple.Internal.Expr ( src/Text/Pretty/Simple/Internal/Expr.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Text/Pretty/Simple/Internal/Expr.o )
+[3 of 8] Compiling Text.Pretty.Simple.Internal.ExprParser ( src/Text/Pretty/Simple/Internal/ExprParser.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Text/Pretty/Simple/Internal/ExprParser.o )
+[4 of 8] Compiling Text.Pretty.Simple.Internal.ExprToOutput ( src/Text/Pretty/Simple/Internal/ExprToOutput.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Text/Pretty/Simple/Internal/ExprToOutput.o )
+[5 of 8] Compiling Text.Pretty.Simple.Internal.Color ( src/Text/Pretty/Simple/Internal/Color.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Text/Pretty/Simple/Internal/Color.o )
+[6 of 8] Compiling Text.Pretty.Simple.Internal.OutputPrinter ( src/Text/Pretty/Simple/Internal/OutputPrinter.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Text/Pretty/Simple/Internal/OutputPrinter.o )
+[7 of 8] Compiling Text.Pretty.Simple.Internal ( src/Text/Pretty/Simple/Internal.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Text/Pretty/Simple/Internal.o )
+[8 of 8] Compiling Text.Pretty.Simple ( src/Text/Pretty/Simple.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.2.0/build/Text/Pretty/Simple.o )
+Installing library in
+/Users/tehnix/.stack/snapshots/x86_64-osx/lts-9.3/8.0.2/lib/x86_64-osx-ghc-8.0.2/pretty-simple-2.0.0.0-GIvmRJL6XdYAGLF0iV75LI
+Registering pretty-simple-2.0.0.0...
