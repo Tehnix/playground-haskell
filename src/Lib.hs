@@ -5,23 +5,19 @@ import Control.Concurrent.STM
 import Control.Lens
 import Control.Monad.Reader
 import Say
-import Prelude hiding (log)
 
-import Types
-import Repl
 import Eval
-
+import Repl
+import Types
 
 lib :: IO ()
 lib = do
   refSymTable <- newTVarIO emptySymbolTable
   refLineNo <- newTVarIO emptyLineNo
   refSteps <- newTVarIO 0
-  let env = Env
-        { envSymTable = refSymTable
-        , envLineNo = refLineNo
-        , envSteps = refSteps
-        }
+  let env =
+        Env
+        {envSymTable = refSymTable, envLineNo = refLineNo, envSteps = refSteps}
   sayString "Starting repl..."
   -- Use `race` to quit whenever either the repl or evaluation finishes.
   runReaderT (race repl eval) env
