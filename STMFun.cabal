@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 44294c50526fe0b771ded7971fac6b529b90a1f2818f81d7b72ca1ebd16681f8
+-- hash: 1aa3a69b67618d4c8438e0319e57821427b933d18037e76be6e2bc8f922dbd9d
 
 name:           STMFun
 version:        0.1.0.0
@@ -23,6 +23,7 @@ library
   build-depends:
       base
     , containers
+    , freer-simple
     , haskeline
     , lens
     , lifted-async
@@ -48,6 +49,7 @@ executable Test-exe
       STMFun
     , base
     , containers
+    , freer-simple
     , haskeline
     , lens
     , lifted-async
@@ -69,6 +71,7 @@ test-suite Test-test
       STMFun
     , base
     , containers
+    , freer-simple
     , haskeline
     , lens
     , lifted-async

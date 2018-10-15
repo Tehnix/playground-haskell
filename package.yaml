@@ -1,23 +1,23 @@
 name: STMFun
-version: '0.1.0.0'
+version: "0.1.0.0"
 category: Miscellanous
 author: Christian Kjaer Laustsen
 maintainer: ckl@codetalk.io
 copyright: Christian Kjaer Laustsen
 license: BSD3
 extra-source-files:
-- README.md
+  - README.md
 
 dependencies:
-- base
-- stm
-- lifted-async
-- say
-- lens
-- mtl
-- containers
-- haskeline
-- unliftio
+  - base
+  - stm
+  - lifted-async
+  - say
+  - lens
+  - mtl
+  - containers
+  - haskeline
+  - unliftio
 
 library:
   source-dirs: src
@@ -27,19 +27,19 @@ executables:
     main: Main.hs
     source-dirs: app
     ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
     dependencies:
-    - STMFun
+      - STMFun
 
 tests:
   Test-test:
     main: Spec.hs
     source-dirs: test
     ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
     dependencies:
-    - STMFun
+      - STMFun
