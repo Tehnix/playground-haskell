@@ -1,8 +1,10 @@
--- This file has been generated from package.yaml by hpack version 0.28.2.
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 1aa3a69b67618d4c8438e0319e57821427b933d18037e76be6e2bc8f922dbd9d
+-- hash: a30318055a47d8c02fc81e3632ab3283d351d03ef90826288b1055f84ae1a4a9
 
 name:           STMFun
 version:        0.1.0.0
@@ -13,7 +15,6 @@ copyright:      Christian Kjaer Laustsen
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
-cabal-version:  >= 1.10
 extra-source-files:
     README.md
 
@@ -23,7 +24,6 @@ library
   build-depends:
       base
     , containers
-    , freer-simple
     , haskeline
     , lens
     , lifted-async
@@ -49,7 +49,6 @@ executable Test-exe
       STMFun
     , base
     , containers
-    , freer-simple
     , haskeline
     , lens
     , lifted-async
@@ -71,7 +70,6 @@ test-suite Test-test
       STMFun
     , base
     , containers
-    , freer-simple
     , haskeline
     , lens
     , lifted-async
