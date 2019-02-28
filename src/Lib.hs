@@ -2,7 +2,6 @@ module Lib where
 
 import Control.Concurrent.Async.Lifted.Safe
 import Control.Concurrent.STM
-import Control.Lens
 import Control.Monad.Reader
 import Say
 
@@ -20,9 +19,9 @@ lib = do
         {envSymTable = refSymTable, envLineNo = refLineNo, envSteps = refSteps}
   sayString "Starting repl..."
   -- Use `race` to quit whenever either the repl or evaluation finishes.
-  runReaderT (race repl eval) env
+  _ <- runReaderT (race repl eval) env
   -- concurrently (modifyLineNo (incLineNo 1)) (modifySteps (+ 1))
-  lineNo <- readTVarIO refLineNo
+  lineNo' <- readTVarIO refLineNo
   step <- readTVarIO refSteps
-  sayString $ "Final Line Number: " ++ show lineNo
+  sayString $ "Final Line Number: " ++ show lineNo'
   sayString $ "Final Step Number: " ++ show step
