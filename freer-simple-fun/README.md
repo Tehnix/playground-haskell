@@ -1,6 +1,6 @@
 # Conditioner - Playing with Effects
 
-The repository is a exploration of using extensible effects, specifically via the [freer-simple](http://hackage.haskell.org/package/freer-simple) library.
+The repository is an exploration of using extensible effects, specifically via the [freer-simple](http://hackage.haskell.org/package/freer-simple) library.
 
 To make it a state of the art, modern Haskell project, we furthermore throw out the default Prelude, and use [relude](http://hackage.haskell.org/package/relude) instead, along with using [lenses](http://hackage.haskell.org/package/lens). Finally, we enable a bunch of Haskell extensions, project-wide, that are very useful.
 
