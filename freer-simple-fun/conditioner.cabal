@@ -1,0 +1,84 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: dda6779383af7c41e4a8fedfc1cff8b6a664ec4b2fcae65cfd02b31a35bf3ce7
+
+name:           conditioner
+version:        0.1.0.0
+category:       Miscellanous
+author:         Christian Kjaer Laustsen
+maintainer:     ckl@codetalk.io
+copyright:      Christian Kjaer Laustsen
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      Effect.FileSystem
+      Effect.Process
+      Effect.Program
+      Interpreter.Effs
+      Interpreter.FileSystem
+      Interpreter.Process
+      Interpreter.Program
+      Lib
+      Prelude
+      Program.Test
+      Types
+  other-modules:
+      Paths_conditioner
+  hs-source-dirs:
+      src
+  default-extensions: ApplicativeDo BangPatterns ConstraintKinds DataKinds DefaultSignatures DeriveFoldable DeriveFunctor DeriveGeneric DeriveLift DeriveTraversable EmptyCase EmptyDataDecls ExistentialQuantification FlexibleContexts FlexibleInstances FunctionalDependencies GADTs GeneralizedNewtypeDeriving InstanceSigs KindSignatures LambdaCase MultiParamTypeClasses MultiWayIf NamedFieldPuns OverloadedStrings PatternSynonyms RankNTypes ScopedTypeVariables StandaloneDeriving TupleSections TypeApplications TypeFamilies TypeFamilyDependencies TypeOperators
+  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Wpartial-fields -fhide-source-paths -Wno-type-defaults
+  build-depends:
+      base-noprelude
+    , freer-simple
+    , lens
+    , relude
+    , say
+    , text-conversions
+  default-language: Haskell2010
+
+executable conditioner-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_conditioner
+  hs-source-dirs:
+      app
+  default-extensions: ApplicativeDo BangPatterns ConstraintKinds DataKinds DefaultSignatures DeriveFoldable DeriveFunctor DeriveGeneric DeriveLift DeriveTraversable EmptyCase EmptyDataDecls ExistentialQuantification FlexibleContexts FlexibleInstances FunctionalDependencies GADTs GeneralizedNewtypeDeriving InstanceSigs KindSignatures LambdaCase MultiParamTypeClasses MultiWayIf NamedFieldPuns OverloadedStrings PatternSynonyms RankNTypes ScopedTypeVariables StandaloneDeriving TupleSections TypeApplications TypeFamilies TypeFamilyDependencies TypeOperators
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Wpartial-fields -fhide-source-paths -Wno-type-defaults
+  build-depends:
+      base-noprelude
+    , conditioner
+    , freer-simple
+    , lens
+    , relude
+    , say
+    , text-conversions
+  default-language: Haskell2010
+
+test-suite Test-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_conditioner
+  hs-source-dirs:
+      test
+  default-extensions: ApplicativeDo BangPatterns ConstraintKinds DataKinds DefaultSignatures DeriveFoldable DeriveFunctor DeriveGeneric DeriveLift DeriveTraversable EmptyCase EmptyDataDecls ExistentialQuantification FlexibleContexts FlexibleInstances FunctionalDependencies GADTs GeneralizedNewtypeDeriving InstanceSigs KindSignatures LambdaCase MultiParamTypeClasses MultiWayIf NamedFieldPuns OverloadedStrings PatternSynonyms RankNTypes ScopedTypeVariables StandaloneDeriving TupleSections TypeApplications TypeFamilies TypeFamilyDependencies TypeOperators
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Wpartial-fields -fhide-source-paths -Wno-type-defaults
+  build-depends:
+      base-noprelude
+    , conditioner
+    , freer-simple
+    , lens
+    , relude
+    , say
+    , text-conversions
+  default-language: Haskell2010
