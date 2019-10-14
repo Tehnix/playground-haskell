@@ -1,0 +1,87 @@
+name:                polysemy-fun
+version:             0.1.0.0
+github:              "tehnix/playground-haskell"
+license:             BSD3
+author:              "Tehnix"
+maintainer:          "ckl@codetalk.io"
+copyright:           "2019 Tehnix"
+description:         "Please see the README on GitHub at <https://github.com/githubuser/polysemy-fun#readme>"
+# synopsis:           "Short description of your package"
+# category:           "Web"
+extra-source-files:
+  - README.md
+  - ChangeLog.md
+
+
+ghc-options:
+  # Recommended settings for polysemy
+  - -O2
+  - -flate-specialise
+  - -fspecialise-aggressively
+  - -fplugin=Polysemy.Plugin
+  # Useful warnings
+  - -Wall
+  - -Wcompat
+  - -Wredundant-constraints
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+
+default-extensions:
+  # Recommended extensions for polysemy
+  - DataKinds
+  - FlexibleContexts
+  - GADTs
+  - LambdaCase
+  - BlockArguments
+  - PolyKinds
+  - RankNTypes
+  - ScopedTypeVariables
+  - TypeApplications
+  - TypeOperators
+  - TypeFamilies
+  - TemplateHaskell
+
+  # Deriving extensions
+  - GeneralizedNewtypeDeriving
+  - DeriveGeneric
+
+  # Misc extensions
+  - OverloadedStrings
+
+dependencies:
+  - base >= 4.7 && < 5
+
+  # To get ghcide working
+  - Cabal >= 3.0.0 && < 4.0
+
+  # Polysemy
+  - polysemy >= 1.2.1.0 && < 2
+  - polysemy-plugin >= 0.2.3.0 && < 0.3
+
+  # Misc
+  - bytestring >= 0.10.8.2 && < 0.11
+
+library:
+  source-dirs: src
+
+executables:
+  polysemy-fun-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - polysemy-fun
+
+tests:
+  polysemy-fun-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - polysemy-fun

@@ -1,0 +1,11 @@
+resolver: nightly-2019-10-14
+packages:
+- .
+extra-deps:
+- polysemy-1.2.1.0
+- polysemy-plugin-0.2.3.0
+- loopbreaker-0.1.1.1
+- github: jberryman/unagi-chan
+  commit: 671ee5dc4c6894a51bc216bdb18fa21e42e4cdba
+- github: chshersh/type-errors-pretty
+  commit: 93f7f90c6b956bd5ab59645746c4a78e3f8d1676
